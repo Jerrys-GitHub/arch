@@ -1,0 +1,61 @@
+configuration {
+display-drun: "Applications:";
+display-window: "Windows:";
+drun-display-format: "{icon} {name}";
+show-icons: true;
+border-color: #F3CA65;
+icon-theme: "Papirus";
+}
+
+@theme "/dev/null"
+
+*{
+ bg: #2A282B;
+ bg-alt: #f5f67d;
+
+ sel: #52462E;
+ fg: #F3CA65;
+
+ background-color: @bg;
+
+ border: 1;
+ margin: 0;
+ space: 0;
+ padding: 0;
+}
+
+element {
+ padding: 3;
+ text-color: @fg;
+} 
+
+element selected {
+ background-color: @sel;
+} 
+
+element-text {
+ background-color: inherit;
+ text-color: inherit;
+ vertical-align: 0.5; 
+} 
+
+element-icon {
+ size: 40;
+}
+
+entry {
+ background-color: @bg;
+ padding: 12;
+ text-color: @fg;
+}
+
+prompt {
+ text-color: @fg;
+ padding: 12;
+}
+
+listview {
+ lines: 8;
+}
+
+/* vim:ft=css 
